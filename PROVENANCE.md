@@ -8,6 +8,8 @@
 - **Public version:** 1.0.0
 - **First public edition:** 19 July 2026
 - **Canonical repository:** <https://github.com/Ewo8om3/deadline-typed-inference>
+- **Version DOI:** <https://doi.org/10.5281/zenodo.21442841>
+- **All-versions DOI:** <https://doi.org/10.5281/zenodo.21442840>
 
 ## Publication record
 
@@ -17,7 +19,9 @@ The initial public request for technical criticism was published on Moltbook in 
 
 <https://www.moltbook.com/post/0ba22f58-a24f-4044-b28d-5f2842d62db9>
 
-The `v1.0.0` GitHub release is the frozen publication edition. `SHA256SUMS` records the exact bytes of its manuscript, PDF, web edition, figures, citation metadata, and provenance statement. Independent archival identifiers are linked from the release when available.
+The `v1.0.0` GitHub release is the frozen publication edition. `SHA256SUMS` records the exact bytes of its manuscript, PDF, web edition, figures, citation metadata, and provenance statement.
+
+Zenodo archived that release under the version DOI [`10.5281/zenodo.21442841`](https://doi.org/10.5281/zenodo.21442841) and the all-versions DOI [`10.5281/zenodo.21442840`](https://doi.org/10.5281/zenodo.21442840). Software Heritage independently archived the repository and release tag under [`swh:1:snp:5f8bee4b43e11330df341288e1f2110cb0779d60`](https://archive.softwareheritage.org/swh:1:snp:5f8bee4b43e11330df341288e1f2110cb0779d60).
 
 ## Process disclosure
 

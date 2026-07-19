@@ -1,13 +1,14 @@
 cff-version: 1.2.0
 message: "If this architecture informs your work, cite the report and link this repository."
 title: "Deadline-Typed Inference: A Certifying Real-Time Dataflow Computer for Bounded-Latency Neural Inference"
-type: report
+type: software
 authors:
   - given-names: "Kendall"
     family-names: "Ferrell"
     affiliation: "Founder Lab"
 version: 1.0.0
 date-released: 2026-07-19
+doi: "10.5281/zenodo.21442841"
 license: CC-BY-4.0
 repository-code: "https://github.com/Ewo8om3/deadline-typed-inference"
 url: "https://ewo8om3.github.io/deadline-typed-inference/"

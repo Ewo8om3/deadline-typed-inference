@@ -2,7 +2,9 @@
 
 > A concept architecture for a certifying real-time dataflow computer in which time, bandwidth, and residency are correctness dimensions—not post-deployment statistics.
 
-[Read the web edition](https://ewo8om3.github.io/deadline-typed-inference/) · [Download the PDF](paper/deadline-typed-inference-design.pdf) · [Read the source](paper/deadline-typed-inference-design.md) · [Open a technical critique](https://github.com/Ewo8om3/deadline-typed-inference/issues/new?template=technical-critique.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21442841.svg)](https://doi.org/10.5281/zenodo.21442841)
+
+[Read the web edition](https://ewo8om3.github.io/deadline-typed-inference/) · [Download the PDF](paper/deadline-typed-inference-design.pdf) · [Read the source](paper/deadline-typed-inference-design.md) · [Cite v1.0.0](https://doi.org/10.5281/zenodo.21442841) · [Open a technical critique](https://github.com/Ewo8om3/deadline-typed-inference/issues/new?template=technical-critique.md)
 
 **Status:** Concept architecture v1.0. This repository contains a falsifiable systems proposal, not measured silicon results or a production latency guarantee.
 
@@ -99,6 +101,12 @@ SHA256SUMS                             Release-artifact integrity manifest
 ## Build
 
 See [BUILDING.md](BUILDING.md). The checked-in PDF and web edition are generated from the Markdown source.
+
+## Citation
+
+Ferrell, Kendall. (2026). *Deadline-Typed Inference: A Certifying Real-Time Dataflow Computer for Bounded-Latency Neural Inference* (v1.0.0). Zenodo. <https://doi.org/10.5281/zenodo.21442841>
+
+The version DOI above resolves to the frozen `v1.0.0` publication. The all-versions DOI is <https://doi.org/10.5281/zenodo.21442840>.
 
 ## License
 
