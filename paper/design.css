@@ -1,0 +1,302 @@
+:root {
+  --ink: #142238;
+  --muted: #5f6f84;
+  --line: #d7e0eb;
+  --blue: #2f66d0;
+  --blue-soft: #edf3ff;
+  --teal: #0f8278;
+  --teal-soft: #e7f7f3;
+  --violet: #6753bd;
+  --violet-soft: #f1efff;
+  --amber: #a96812;
+  --amber-soft: #fff4da;
+  --red: #b93b3b;
+  --red-soft: #fdecec;
+  --paper: #ffffff;
+  --panel: #f7f9fc;
+}
+
+@page {
+  size: Letter;
+  margin: 0.7in 0.7in 0.76in;
+  @bottom-left {
+    content: "DEADLINE-TYPED INFERENCE · CONCEPT ARCHITECTURE V1.0";
+    color: #7b8798;
+    font: 7.5pt ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: 0.45pt;
+  }
+  @bottom-right {
+    content: counter(page) " / " counter(pages);
+    color: #7b8798;
+    font: 7.5pt ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+@page:first {
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: #e9edf3;
+  color: var(--ink);
+  font-size: 10.2pt;
+}
+
+body {
+  max-width: 8.5in;
+  margin: 24px auto;
+  padding: 0.7in;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.48;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@media print {
+  html, body { background: #fff; }
+  body { max-width: none; margin: 0; padding: 0; }
+}
+
+#title-block-header {
+  min-height: 8.15in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 8px solid var(--blue);
+  border-bottom: 1px solid var(--line);
+  break-after: page;
+  position: relative;
+}
+
+#title-block-header::before {
+  content: "FIRST-PRINCIPLES ARCHITECTURE DESIGN PROPOSAL";
+  color: var(--blue);
+  font-size: 9pt;
+  font-weight: 800;
+  letter-spacing: 1.6pt;
+  margin-bottom: 22px;
+}
+
+#title-block-header::after {
+  content: "STATUS · CONCEPT ARCHITECTURE — REQUIREMENTS, PROOF MODEL, AND VALIDATION PLAN";
+  color: var(--muted);
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.7pt;
+  margin-top: 48px;
+}
+
+h1.title {
+  font-size: 34pt;
+  line-height: 1.02;
+  letter-spacing: -1.4pt;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+#title-block-header h1.title { break-before: auto; }
+
+p.subtitle {
+  max-width: 6.25in;
+  margin: 0 0 34px;
+  color: var(--muted);
+  font-size: 16pt;
+  line-height: 1.3;
+}
+
+p.author, p.date {
+  margin: 2px 0;
+  color: var(--muted);
+  font-size: 10pt;
+}
+
+nav#TOC {
+  min-height: 8.05in;
+  break-after: page;
+}
+
+nav#TOC h2 {
+  margin-top: 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 23pt;
+}
+
+nav#TOC ul { list-style: none; padding-left: 0; margin: 0; }
+nav#TOC ul ul { padding-left: 18px; margin: 3px 0 7px; }
+nav#TOC li { margin: 5px 0; line-height: 1.25; }
+nav#TOC a { color: var(--ink); text-decoration: none; }
+nav#TOC > ul > li > a { font-weight: 720; }
+nav#TOC ul ul a { color: var(--muted); font-size: 9.3pt; }
+
+h1, h2, h3, h4 { color: var(--ink); line-height: 1.18; }
+h1 {
+  break-before: page;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--ink);
+  font-size: 23pt;
+  letter-spacing: -0.4pt;
+}
+h1#why-this-is-a-serious-synthesis,
+h1#system-architecture,
+h1#model-and-training-contract,
+h1#security-isolation-and-trust,
+h1#validation-program,
+h1#risks-and-open-research-questions {
+  break-before: auto;
+  margin-top: 34px;
+}
+h2 { margin: 26px 0 10px; font-size: 16pt; color: #1d3150; }
+h3 { margin: 20px 0 8px; font-size: 12.5pt; color: #263b5b; }
+h4 { margin: 16px 0 7px; font-size: 10.5pt; }
+
+p { margin: 0 0 10px; }
+ul, ol { margin: 7px 0 12px 20px; padding-left: 8px; }
+li { margin: 3px 0; }
+strong { font-weight: 740; }
+
+a { color: #2459b8; text-decoration-thickness: 0.7px; text-underline-offset: 2px; }
+
+blockquote {
+  margin: 16px 0;
+  padding: 13px 16px;
+  border-left: 4px solid var(--blue);
+  background: var(--blue-soft);
+  color: #253955;
+  break-inside: avoid;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+.callout {
+  margin: 16px 0;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--blue);
+  border-radius: 8px;
+  background: var(--panel);
+  break-inside: avoid;
+}
+.callout h3 { margin-top: 0; }
+.callout.key { background: var(--blue-soft); border-left-color: var(--blue); }
+.callout.proof { background: var(--teal-soft); border-left-color: var(--teal); }
+.callout.warning { background: var(--amber-soft); border-left-color: var(--amber); }
+.callout.risk { background: var(--red-soft); border-left-color: var(--red); }
+.callout p:last-child, .callout ul:last-child { margin-bottom: 0; }
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 16px 0 20px;
+  break-inside: avoid;
+}
+.metric-card {
+  min-height: 83px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+.metric-card .kicker { color: var(--muted); font-size: 7.5pt; font-weight: 780; letter-spacing: 0.7pt; text-transform: uppercase; }
+.metric-card .value { margin-top: 7px; color: var(--ink); font-size: 13pt; line-height: 1.12; font-weight: 780; }
+
+.equation {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #b9c9e8;
+  border-radius: 9px;
+  background: var(--blue-soft);
+  text-align: center;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12pt;
+  font-weight: 720;
+  break-inside: avoid;
+}
+
+code {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: #eef1f5;
+  color: #20304a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+}
+pre {
+  margin: 12px 0 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #f3f5f8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.35;
+  break-inside: avoid;
+}
+pre code { padding: 0; background: transparent; }
+
+table {
+  width: 100%;
+  margin: 14px 0 20px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 8.45pt;
+  line-height: 1.34;
+}
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th, td {
+  padding: 7px 8px;
+  border: 1px solid var(--line);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+th { background: #eaf0f8; color: #203451; text-align: left; font-weight: 760; }
+tbody tr:nth-child(even) { background: #fafbfd; }
+
+figure {
+  margin: 20px 0 24px;
+  break-inside: avoid;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+}
+figcaption {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 8.2pt;
+  line-height: 1.35;
+}
+
+.half { width: 49%; display: inline-block; vertical-align: top; }
+.pagebreak { break-before: page; }
+.keep { break-inside: avoid; }
+.smallprint { color: var(--muted); font-size: 8.2pt; }
+.status-line {
+  margin: 0 0 20px;
+  padding: 9px 12px;
+  background: var(--amber-soft);
+  border-left: 4px solid var(--amber);
+  color: #684612;
+  font-size: 8.8pt;
+  font-weight: 650;
+}
+
+hr { margin: 24px 0; border: 0; border-top: 1px solid var(--line); }
+
+.references p { padding-left: 18px; text-indent: -18px; font-size: 8.6pt; }
+
+@media (max-width: 760px) {
+  body { margin: 0; padding: 24px; }
+  .metric-grid { grid-template-columns: 1fr 1fr; }
+}

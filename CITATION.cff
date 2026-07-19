@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If this architecture informs your work, cite the report and link this repository."
+title: "Deadline-Typed Inference: A Certifying Real-Time Dataflow Computer for Bounded-Latency Neural Inference"
+type: report
+authors:
+  - name: "Founder Lab"
+version: 1.0.0
+date-released: 2026-07-19
+license: CC-BY-4.0
+repository-code: "https://github.com/Ewo8om3/deadline-typed-inference"
+url: "https://ewo8om3.github.io/deadline-typed-inference/"
+abstract: >-
+  A concept architecture that treats time, bandwidth, and residency as
+  correctness dimensions and admits neural inference through compositional
+  demand and capability certificates.
