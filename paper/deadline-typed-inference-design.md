@@ -1,7 +1,7 @@
 ---
 title: "Deadline-Typed Inference"
 subtitle: "A certifying real-time dataflow computer for bounded-latency neural inference"
-author: "Founder Lab · Concept Architecture v1.0"
+author: "Kendall Ferrell · Founder Lab · Concept Architecture v1.0"
 date: "19 July 2026"
 lang: en-US
 toc: true

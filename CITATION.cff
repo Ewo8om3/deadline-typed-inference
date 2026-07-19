@@ -3,7 +3,9 @@ message: "If this architecture informs your work, cite the report and link this 
 title: "Deadline-Typed Inference: A Certifying Real-Time Dataflow Computer for Bounded-Latency Neural Inference"
 type: report
 authors:
-  - name: "Founder Lab"
+  - given-names: "Kendall"
+    family-names: "Ferrell"
+    affiliation: "Founder Lab"
 version: 1.0.0
 date-released: 2026-07-19
 license: CC-BY-4.0

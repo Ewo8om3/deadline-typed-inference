@@ -6,6 +6,8 @@
 
 **Status:** Concept architecture v1.0. This repository contains a falsifiable systems proposal, not measured silicon results or a production latency guarantee.
 
+**Author:** [Kendall Ferrell](PROVENANCE.md), Founder Lab. First public edition: 19 July 2026.
+
 ![Demand and capability certificates are checked before work enters certified, elastic, or best-effort execution lanes.](paper/assets/proof-carrying-inference.png)
 
 ## The thesis
@@ -90,6 +92,8 @@ paper/
 docs/
   index.html                           Self-contained web edition
 .github/ISSUE_TEMPLATE/                Structured critique templates
+PROVENANCE.md                          Authorship and first-disclosure record
+SHA256SUMS                             Release-artifact integrity manifest
 ```
 
 ## Build
@@ -98,4 +102,4 @@ See [BUILDING.md](BUILDING.md). The checked-in PDF and web edition are generated
 
 ## License
 
-The paper, figures, and repository documentation are licensed under [Creative Commons Attribution 4.0 International](LICENSE). Attribution does not imply endorsement.
+Copyright © 2026 Kendall Ferrell. The paper, figures, and repository documentation are licensed under [Creative Commons Attribution 4.0 International](LICENSE). Attribution does not imply endorsement. See [PROVENANCE.md](PROVENANCE.md) for the authorship and public-disclosure record.
