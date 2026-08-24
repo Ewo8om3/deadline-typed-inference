@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a post-publication evidence log without modifying the frozen v1.0.0 artifacts.
+- Classified AirLLM v3.1.0's Kimi K3 result as a batch/research baseline: 3.72 GB peak VRAM against a 1.56 TB checkpoint, with maintainer-reported generation at 292 seconds per token.
+- Added a controlled comparison between cold expert streaming and stationary-expert placement to the validation backlog.
+
 ## 1.0.0 — 2026-07-19
 
 - Published the first complete concept architecture.
